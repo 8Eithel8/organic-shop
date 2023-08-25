@@ -1,35 +1,78 @@
+@import './vendor/normalize.css';
+@import './vendor/fonts/fonts.css';
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+.App {
+  width: 100%;
+  height: 100vh;
+  /*background: #191919;*/
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+html {
+  font-size: 0.25vw;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+@media (min-width: 400px) {
+  html {
+    font-size: 1px;
+  }
+}
+@media (min-width: 440px) {
+  html {
+    font-size: calc(100vw/440);
+  }
+}
+@media (min-width: 600px) {
+  html {
+    font-size: 1.362px;
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+/*2 колонки*/
+@media (min-width: 760px) {
+  html {
+    font-size: 0.12vw;
   }
+}
+@media (min-width: 833px) {
+  html {
+    font-size: 1px;
+  }
+}
+@media (min-width: 852px) {
+  html {
+    font-size: calc(100vw / 852);
+  }
+}
+@media (min-width: 934px) {
+  html {
+    font-size: 1.12px;
+  }
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+/*3 колонки*/
+@media (min-width: 1264px) {
+  html {
+    font-size: calc(100vw / 1264);
+  }
+}
+@media (min-width: 1420px) {
+  html {
+    font-size: 1.12px;
+  }
+}
+
+.page {
+  background: var(--background-page);
+}
+
+@media (max-width: 1263px) {
+  .hidden-tab {
+    display: none;
+  }
+}
+@media (max-width: 765px) {
+  .hidden-mobile {
+    display: none;
   }
 }
