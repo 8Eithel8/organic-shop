@@ -1,13 +1,13 @@
 <template>
     <component :is="root" :class="`container-vertical ${modifier === '' ? '' : `container-vertical_${modifier}`}`">
-        <component :is="left" class="left">
-            <slot name="left"></slot>
+        <component :is="top" class="top">
+            <slot name="top"></slot>
         </component>
         <component :is="center" class="center">
             <slot></slot>
         </component>
-        <component :is="right" class="right">
-            <slot name="right"></slot>
+        <component :is="bottom" class="bottom">
+            <slot name="bottom"></slot>
         </component>
     </component>
 </template>
@@ -22,7 +22,7 @@ defineProps( {
         type: String,
         default: '',
     },
-    left: {
+    top: {
         type: String,
         default: 'div',
     },
@@ -30,7 +30,7 @@ defineProps( {
         type: String,
         default: 'div',
     },
-    right: {
+    bottom: {
         type: String,
         default: 'div',
     }

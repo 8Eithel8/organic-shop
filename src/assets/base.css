@@ -13,6 +13,8 @@
   --c-background: var(--c-subtle);
   --c-text: var(--c-primary);
   --c-text-secondary: var(--c-secondary);
+  --c-text-light: var(--c-light);
+  --c-background-secondary: var(--c-secondary);
   --c-link: var(--c-secondary);
 }
 

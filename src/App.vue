@@ -1,27 +1,24 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import HorizontalLayout from './components/layout/HorizontalLayout.vue';
-// import Header from '@/components/Header.vue';
+import Header from '@/components/header/Header.vue';
+import VerticalLayout from '@/components/layout/VerticalLayout.vue';
 // import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
-    <HorizontalLayout class="page" left="header" right="footer" center="main">
-        <template v-slot:top>
+    <VerticalLayout top="header" bottom="footer" center="main">
+        <template v-slot:top >
             <Header/>
         </template>
         <slot>
             <RouterView />
         </slot>
         <template v-slot:bottom >
-            <Footer/>
+<!--            <Footer/>-->
         </template>
-    </HorizontalLayout>
+    </VerticalLayout>
 
 </template>
 
 <style scoped>
-.page {
-
-}
 </style>
