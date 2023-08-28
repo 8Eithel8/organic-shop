@@ -3,7 +3,7 @@
 
 <template>
     <RouterLink to='/' class="link">
-        <img class="logo" src='../../assets/logo-header.svg' alt="Логотип"/>
+        <img class="logo" src='../icons/logo-header.svg' alt="Логотип"/>
     </RouterLink>
 </template>
 

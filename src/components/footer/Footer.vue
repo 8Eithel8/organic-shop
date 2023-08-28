@@ -49,7 +49,7 @@ import Copyright from '@/components/Copyright.vue';
 
 <style scoped>
 .footer {
-    background: url("../../assets/back-footer.svg") repeat;
+    background: url("../icons/back-footer.svg") repeat;
     background-size: cover;
 }
 
@@ -132,18 +132,18 @@ import Copyright from '@/components/Copyright.vue';
 }
 
 .footer__social-link_fb {
-    background: url("../../assets/facebook.svg") no-repeat center;
+    background: url("../icons/facebook.svg") no-repeat center;
 }
 
 .footer__social-link_in {
-    background: url("../../assets/in.svg") no-repeat center;
+    background: url("../icons/in.svg") no-repeat center;
 }
 
 .footer__social-link_tw {
-    background: url("../../assets/tw.svg") no-repeat center;
+    background: url("../icons/tw.svg") no-repeat center;
 }
 
 .footer__social-link_inst {
-    background: url("../../assets/inst.svg") no-repeat center;
+    background: url("../icons/inst.svg") no-repeat center;
 }
 </style>
