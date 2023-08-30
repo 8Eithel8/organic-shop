@@ -3,6 +3,7 @@ import Promo from '@/components/Promo.vue';
 import Section from '@/components/Section.vue';
 import Cards from '@/components/card/Cards.vue';
 import Slider from '@/components/slider/Slider.vue';
+import FeedBack from '@/components/FeedBack.vue';
 </script>
 
 <template>
@@ -21,7 +22,9 @@ import Slider from '@/components/slider/Slider.vue';
     >
       <Slider/>
     </Section>
-
+    <section>
+        <FeedBack/>
+    </section>
     <Section
       title="Subscribe to Our Newsletter"
       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua."
