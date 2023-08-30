@@ -31,6 +31,7 @@ defineProps({
     flex-direction: column;
     align-items: center;
     padding: 100rem 139rem;
+    margin: 0 auto;
 }
 
 .section__decoration {
@@ -56,7 +57,7 @@ defineProps({
     font-weight: 400;
     font-size: 16rem;
     line-height: 21rem;
-    margin: 0;
+    margin: 0 0 82rem 0;
     text-align: center;
 }
 </style>

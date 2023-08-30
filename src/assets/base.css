@@ -9,13 +9,15 @@
 
 /* semantic color variables for this project */
 :root {
-
   --c-background: var(--c-subtle);
   --c-text: var(--c-primary);
+  --c-card-border: var(--c-primary);
+  --c-pagination: var(--c-primary);
   --c-text-secondary: var(--c-secondary);
   --c-text-light: var(--c-light);
   --c-background-secondary: var(--c-secondary);
   --c-link: var(--c-secondary);
+  --c-pagination-active: var(--c-secondary);
 }
 
 *,
@@ -28,5 +30,4 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(var(--c-background) 15%, var(--c-light) 30%);
 }

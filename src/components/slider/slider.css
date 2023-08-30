@@ -1,0 +1,23 @@
+.carousel {
+    width: 100%;
+}
+
+.carousel__pagination {
+    margin-top: 94rem !important;
+    gap: 18rem;
+}
+
+ol .carousel__pagination-button {
+    width: 10rem !important;
+    height: 10rem !important;
+    border-radius: 100%;
+    background-color: var(--c-pagination);
+}
+
+ol .carousel__pagination-button--active {
+    background-color: var(--c-pagination-active);
+}
+
+ol .carousel__pagination-button::after {
+    display: none;
+}
