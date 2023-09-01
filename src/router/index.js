@@ -17,7 +17,9 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
     }
-  ]
+  ],
+  linkActiveClass: 'header__link_current',
+  linkExactActiveClass: 'header__link_current',
 })
 
 export default router

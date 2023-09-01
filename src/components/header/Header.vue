@@ -8,10 +8,10 @@ import Logo from '@/components/logo/Logo.vue';
             <Logo/>
             <div class="header__block">
                 <ul class="header__links">
-                    <li class="header__link-item"><RouterLink class="header__link" to="/">Home</RouterLink></li>
-                    <li class="header__link-item"><RouterLink class="header__link" to="/news">Products</RouterLink></li>
-                    <li class="header__link-item"><RouterLink class="header__link" to="/docs">Blog</RouterLink></li>
-                    <li class="header__link-item"><RouterLink class="header__link" to="/docs">About Us</RouterLink></li>
+                    <li><RouterLink class="header__link" to="/">Home</RouterLink></li>
+                    <li><RouterLink class="header__link" to="/news">Products</RouterLink></li>
+                    <li><RouterLink class="header__link" to="/docs">Blog</RouterLink></li>
+                    <li><RouterLink class="header__link" to="/docs">About Us</RouterLink></li>
                 </ul>
                 <RouterLink class="header__link header__link_contact" to="/docs">Contact</RouterLink>
             </div>
@@ -59,15 +59,9 @@ import Logo from '@/components/logo/Logo.vue';
     align-items: center;
 }
 
-.header__link-item {
-    padding: 7rem 0;
-    border-bottom: 2rem solid  transparent;
-}
-
-.header__link-item:hover {
-    border-bottom: 2rem solid var(--c-link);
-
-}
+/*.header__link:hover {*/
+/*    border-bottom: 2rem solid var(--c-link);*/
+/*}*/
 
 .header__link {
     color: rgb(55, 75, 92);
@@ -78,6 +72,12 @@ import Logo from '@/components/logo/Logo.vue';
     letter-spacing: 0px;
     text-align: left;
     text-decoration: none;
+    padding: 7rem 0;
+    border-bottom: 2rem solid  transparent;
+}
+
+.header__link_current {
+    border-bottom: 2rem solid var(--c-link);
 }
 
 .header__link_contact {

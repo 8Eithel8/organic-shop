@@ -2,9 +2,7 @@
 </script>
 
 <template>
-    <RouterLink to='/' class="link">
-        <img class="logo" src='../icons/logo-header.svg' alt="Логотип"/>
-    </RouterLink>
+    <img class="logo" src='../icons/logo-header.svg' alt="Логотип"/>
 </template>
 
 <style scoped>
