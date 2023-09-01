@@ -34,6 +34,10 @@ defineProps({
     margin: 0 auto;
 }
 
+.section:last-of-type {
+    padding: 16rem 139rem 100rem 139rem;
+}
+
 .section__decoration {
     width: 60rem;
     height: 48rem;

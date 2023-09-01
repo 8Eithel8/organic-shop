@@ -37,4 +37,9 @@ defineProps(
     text-transform: capitalize;
     color: var(--c-text-light);
 }
+.ellipse {
+    border-radius: 30rem;
+    padding: 15rem 45rem;
+}
+
 </style>
