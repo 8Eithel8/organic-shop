@@ -18,10 +18,7 @@ defineProps({
         <fieldset class="form__fields">
             <slot/>
         </fieldset>
-        <div class="form__buttons">
-            <Button type="submit">{{ textConfirm }}</Button>
-        </div>
-
+        <Button class="form__button" type="submit">{{ textConfirm }}</Button>
     </form>
 </template>
 
@@ -32,27 +29,25 @@ defineProps({
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 3px;
-    gap: 25px;
+    border-radius: 3rem;
+    gap: 25rem;
     max-width: 523rem;
     padding: 0;
 }
 
 .form__fields {
     border: none;
-    padding: 10px 0;
-    gap: 25px;
+    padding: 0;
+    gap: 25rem;
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: column;*/
-    width: 100%;
+    justify-content: space-between;
+    max-width: 523rem;
     outline: none;
 }
 
-.form__buttons {
-    display: flex;
-    gap: 20px;
-    box-sizing: border-box;
-    width: 100%;
+.form__button {
+    align-self: end;
+    padding: 11rem 53rem 11rem 44rem;
 }
 </style>

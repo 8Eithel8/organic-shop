@@ -2,6 +2,7 @@
 
 import Form from '@/components/form/Form.vue';
 import FormInput from '@/components/form/FormInput.vue';
+import FormTextArea from '@/components/form/FormTextArea.vue';
 </script>
 
 <template>
@@ -10,9 +11,10 @@ import FormInput from '@/components/form/FormInput.vue';
         <p class="section__text">Feel free to fill out the form and reach to us. We will get back to you shortly.</p>
         <Form textConfirm="submit">
             <FormInput placeholder="First Name"/>
-            <FormInput/>
-            <FormInput/>
-            <FormInput/>
+            <FormInput placeholder="Last Name"/>
+            <FormInput placeholder="Email" type="email"/>
+            <FormInput placeholder="Phone" type="phone"/>
+            <FormTextArea placeholder="Message"/>
         </Form>
     </section>
 </template>
@@ -25,6 +27,32 @@ import FormInput from '@/components/form/FormInput.vue';
     align-items: center;
     padding: 100rem 139rem;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.section::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 50rem;
+    right: 0;
+    width: 353rem;
+    height: 694rem;
+    background: url("../assets/image/leaf-right.png") no-repeat center;
+}
+
+.section::after {
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: 50rem;
+    left: 0;
+    width: 281rem;
+    height: 378rem;
+    background: url("./icons/logo.svg") no-repeat right;
+    background-size: cover;
+    opacity: .1;
 }
 
 .section__title {

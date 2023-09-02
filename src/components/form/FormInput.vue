@@ -1,5 +1,4 @@
 <script setup>
-import DanderMessage from '@/components/DanderMessage.vue';
 const hasError = false;
 
 defineProps({
@@ -29,7 +28,6 @@ defineEmits(['update:modelValue'])
                     :placeholder="placeholder"
                     @keyup.enter="$emit('input-enter')"
             />
-<!--            <DanderMessage v-if="hasError"/>-->
         </div>
     </label>
 </template>
@@ -48,22 +46,22 @@ defineEmits(['update:modelValue'])
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 12rem;
+    line-height: 12rem;
     color: rgba(45, 47, 51, 0.45);
 }
 
 .form__field {
     border-radius: 10rem;
-    border: 2px solid var(--c-border);
+    border: 2rem solid var(--c-border);
     box-sizing: border-box;
     font-family: var(--font-text);
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 16rem;
+    line-height: 16rem;
     color: var(--c-text);
-    padding: 12px 0 12px 15px;
+    padding: 11rem 0 11rem 15rem;
     max-width: 241rem;
 }
 

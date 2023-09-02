@@ -1,5 +1,4 @@
 <script setup>
-import DanderMessage from '@/components/DanderMessage.vue';
 const hasError = false;
 
 defineProps({
@@ -19,7 +18,6 @@ defineEmits(['update:modelValue'])
 <template>
     <label class="form__label" htmlFor="surname">
         {{ label }}
-        <div class="form__field-wrapper">
             <textarea
                 :value="modelValue"
                     @input="$emit('update:modelValue', $event.target.value)"
@@ -30,8 +28,6 @@ defineEmits(['update:modelValue'])
                     @keyup.enter="$emit('input-enter')"
             >
             </textarea>
-<!--            <DanderMessage v-if="hasError"/>-->
-        </div>
     </label>
 </template>
 
@@ -41,17 +37,14 @@ defineEmits(['update:modelValue'])
     outline: none;
 }
 
-.form__field-wrapper {
-    position: relative;
-}
-
 .form__label {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 12rem;
+    line-height: 12rem;
     color: rgba(45, 47, 51, 0.45);
+    width: 100%;
 }
 
 .form__field {
@@ -61,11 +54,12 @@ defineEmits(['update:modelValue'])
     font-family: var(--font-text);
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 16rem;
+    line-height: 30rem;
     color: var(--c-text);
-    padding: 12px 0 12px 15px;
-    max-width: 241rem;
+    padding: 12rem 0 12rem 15rem;
+    width: 100%;
+    height: 178rem;
 }
 
 .form__field_error {
