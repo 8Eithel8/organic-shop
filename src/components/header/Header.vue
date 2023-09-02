@@ -9,11 +9,11 @@ import Logo from '@/components/logo/Logo.vue';
             <div class="header__block">
                 <ul class="header__links">
                     <li><RouterLink class="header__link" to="/">Home</RouterLink></li>
-                    <li><RouterLink class="header__link" to="/news">Products</RouterLink></li>
-                    <li><RouterLink class="header__link" to="/docs">Blog</RouterLink></li>
-                    <li><RouterLink class="header__link" to="/docs">About Us</RouterLink></li>
+                    <li><RouterLink class="header__link" to="/products">Products</RouterLink></li>
+                    <li><RouterLink class="header__link" to="/blog">Blog</RouterLink></li>
+                    <li><RouterLink class="header__link" to="/about-us">About Us</RouterLink></li>
                 </ul>
-                <RouterLink class="header__link header__link_contact" to="/docs">Contact</RouterLink>
+                <RouterLink class="header__link header__link_contact" to="/contact">Contact</RouterLink>
             </div>
         </div>
     </header>

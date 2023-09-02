@@ -19,6 +19,7 @@
   --c-link: var(--c-secondary);
   --c-pagination-active: var(--c-secondary);
   --c-pagination-light: var(--c-secondary);
+  --c-border: var(--c-secondary);
 }
 
 *,
