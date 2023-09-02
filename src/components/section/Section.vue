@@ -19,7 +19,7 @@ defineProps({
     <section class="section">
         <div class="section__decoration" v-show="decoration"></div>
         <h2 class="section__title">{{ title }}</h2>
-        <p class="section__text">{{ text }}</p>
+<!--        <p class="section__text">{{ text }}</p>-->
         <slot></slot>
     </section>
 </template>
@@ -48,7 +48,7 @@ defineProps({
     font-family: var(--font-text);
     color: var(--c-text);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 36rem;
     line-height: 48rem;
     margin: 15rem 0 19rem 0;

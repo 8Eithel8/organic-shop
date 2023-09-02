@@ -6,6 +6,7 @@ import Slider from '@/components/slider/Slider.vue';
 import FeedBack from '@/components/feedback/FeedBack.vue';
 import Subscribe from '@/components/subcribe/Subscribe.vue';
 import CardsBlog from '@/components/card/CardsBlog.vue';
+import Text from '@/components/Text.vue';
 </script>
 
 <template>
@@ -14,28 +15,36 @@ import CardsBlog from '@/components/card/CardsBlog.vue';
     <Section
       decoration
       title="Welcome to Nature"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua."
     >
+        <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua.
+        </Text>
       <Cards/>
       </Section>
     <Section
       title="Proudly presented by"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua."
     >
+      <Text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua.
+      </Text>
       <Slider/>
     </Section>
     <FeedBack/>
     <Section
       title="Subscribe to Our Newsletter"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua."
     >
+        <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua.
+        </Text>
         <Subscribe/>
     </Section>
     <Section
       decoration
       title="Read Our Blog"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua."
     >
+        <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua.
+        </Text>
         <CardsBlog/>
     </Section>
   </main>

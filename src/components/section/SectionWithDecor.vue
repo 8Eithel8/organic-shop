@@ -4,10 +4,6 @@ defineProps({
         type: String,
         default: "Документы",
     },
-    text: {
-        type: String,
-        default: "Документы",
-    },
     decoration: {
         type: Boolean,
         default: false
@@ -19,7 +15,6 @@ defineProps({
     <section class="section">
         <div class="section__decoration" v-show="decoration"></div>
         <h2 class="section__title">{{ title }}</h2>
-        <p class="section__text">{{ text }}</p>
         <slot></slot>
     </section>
 </template>
@@ -50,7 +45,7 @@ defineProps({
     display: block;
     position: absolute;
     content: '';
-    bottom: 50rem;
+    top: 283rem;
     left: 0;
     width: 281rem;
     height: 378rem;
