@@ -1,21 +1,26 @@
 <script setup>
-
-import Form from '@/components/form/Form.vue';
-import FormInput from '@/components/form/FormInput.vue';
-import FormTextArea from '@/components/form/FormTextArea.vue';
+defineProps({
+    title: {
+        type: String,
+        default: "Документы",
+    },
+    text: {
+        type: String,
+        default: "Документы",
+    },
+    decoration: {
+        type: Boolean,
+        default: false
+    }
+})
 </script>
 
 <template>
     <section class="section">
-        <h2 class="section__title">Send us a message</h2>
-        <p class="section__text">Feel free to fill out the form and reach to us. We will get back to you shortly.</p>
-        <Form textConfirm="submit">
-            <FormInput placeholder="First Name"/>
-            <FormInput placeholder="Last Name"/>
-            <FormInput placeholder="Email" type="email"/>
-            <FormInput placeholder="Phone" type="phone"/>
-            <FormTextArea placeholder="Message"/>
-        </Form>
+        <div class="section__decoration" v-show="decoration"></div>
+        <h2 class="section__title">{{ title }}</h2>
+        <p class="section__text">{{ text }}</p>
+        <slot></slot>
     </section>
 </template>
 
@@ -28,7 +33,6 @@ import FormTextArea from '@/components/form/FormTextArea.vue';
     padding: 100rem 139rem;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
 }
 
 .section::before {
@@ -39,7 +43,7 @@ import FormTextArea from '@/components/form/FormTextArea.vue';
     right: 0;
     width: 353rem;
     height: 694rem;
-    background: url("../assets/image/leaf-right.png") no-repeat center;
+    background: url("../../assets/image/leaf-right.png") no-repeat center;
 }
 
 .section::after {
@@ -50,7 +54,7 @@ import FormTextArea from '@/components/form/FormTextArea.vue';
     left: 0;
     width: 281rem;
     height: 378rem;
-    background: url("./icons/logo.svg") no-repeat right;
+    background: url("../icons/logo.svg") no-repeat right;
     background-size: cover;
     opacity: .1;
 }

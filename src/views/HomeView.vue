@@ -1,6 +1,6 @@
 <script setup>
 import Promo from '@/components/Promo.vue';
-import Section from '@/components/Section.vue';
+import Section from '@/components/section/Section.vue';
 import Cards from '@/components/card/Cards.vue';
 import Slider from '@/components/slider/Slider.vue';
 import FeedBack from '@/components/feedback/FeedBack.vue';

@@ -41,7 +41,7 @@ defineProps({
 .section__decoration {
     width: 60rem;
     height: 48rem;
-    background: url("./icons/decoration.svg") no-repeat center;
+    background: url("../icons/decoration.svg") no-repeat center;
 }
 
 .section__title {

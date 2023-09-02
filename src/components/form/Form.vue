@@ -33,6 +33,7 @@ defineProps({
     gap: 25rem;
     max-width: 523rem;
     padding: 0;
+    z-index: 10;
 }
 
 .form__fields {
