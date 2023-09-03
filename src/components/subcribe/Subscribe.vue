@@ -6,7 +6,7 @@ import Button from '@/components/buttons/Button.vue';
 <template>
   <form class="subscribe">
       <input class="subscribe__field" type="email" placeholder="Enter your email address"/>
-      <Button skin="ellipse" type="submit">Subscribe</Button>
+      <Button class="ellipse" type="submit">Subscribe</Button>
   </form>
 </template>
 

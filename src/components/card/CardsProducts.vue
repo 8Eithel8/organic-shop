@@ -5,6 +5,7 @@
   import ImageThird from '../../assets/image/potted-plant-near-cosmetics-bottles-jars_-1.jpg';
   import CardLarge from '@/components/card/CardLarge.vue';
   import CardLink from '@/components/card/CardLink.vue';
+  import Button from '@/components/buttons/Button.vue';
 
   defineProps({
       cards: {
@@ -55,7 +56,7 @@
   <ul class="cards">
       <li class="card" v-for="card in cards">
           <CardLarge :data="card">
-              <CardLink :to="cards.link"/>
+              <Button class="button_outline button_small">Order Now</Button>
           </CardLarge>
       </li>
   </ul>

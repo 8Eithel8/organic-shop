@@ -8,16 +8,12 @@ defineProps(
             type: String,
             default: "button",
         },
-        skin: {
-            type: String,
-            default: "dark",
-        }
     }
 )
 </script>
 
 <template>
-    <button class="button" :class="skin" :type="type" @click="onClick">
+    <button class="button" :type="type" @click="onClick">
         <slot></slot>
     </button>
 </template>
@@ -40,6 +36,21 @@ defineProps(
 .ellipse {
     border-radius: 30rem;
     padding: 15rem 45rem;
+}
+
+.button_outline {
+    padding: 10rem 36rem;
+    border: 2rem solid var(--c-link);
+    border-radius: 10rem;
+    background: transparent;
+    color: var(--c-text);
+}
+
+.button_small {
+    padding: 8rem 30rem;
+    font-size: 16rem;
+    line-height: 21rem;
+    font-weight: 400;
 }
 
 </style>

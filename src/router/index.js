@@ -19,6 +19,16 @@ const router = createRouter({
       name: 'about-us',
       component: () => import('../views/AboutUsView.vue')
     },
+    {
+      path: '/products',
+      name: 'products',
+      component: () => import('../views/Products.vue')
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: () => import('../views/blog.vue')
+    },
   ],
   linkActiveClass: 'header__link_current',
   linkExactActiveClass: 'header__link_current',

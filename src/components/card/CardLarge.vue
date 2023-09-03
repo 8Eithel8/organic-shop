@@ -1,34 +1,16 @@
 <script setup>
-import Image from '../../assets/image/card-img.png';
-
   defineProps({
-      image: {
-          type: String,
-          default: Image,
-      },
-      title: {
-          type: String,
-          default: 'Organic Food',
-      },
-      text: {
-          type: String,
-          default: 'Lorem ipsum dolor sit  amet, consectetur',
-      },
-      link: {
-          type: String,
-          default: '/',
-      },
+      data: Object,
   })
 </script>
 
 <template>
 <div class="card">
-    <img class="card__image" :src="image">
+    <img class="card__image" :src="data.image">
     <div class="card__container">
-        <h3 class="card__title">{{ title }}</h3>
-        <p class="card__text">{{ text }}</p>
-        <RouterLink class="card__link" :to="link">Read More</RouterLink>
-        <div class="card__line"></div>
+        <h3 class="card__title">{{ data.title }}</h3>
+        <p class="card__text">{{ data.text }}</p>
+        <slot></slot>
     </div>
 </div>
 </template>
@@ -71,7 +53,7 @@ import Image from '../../assets/image/card-img.png';
       text-align: center;
   }
 
-  :is(.card__text, .card__link) {
+.card__text {
       font-family: var(--font-text);
       color: var(--c-text);
       font-weight: 400;
@@ -80,13 +62,6 @@ import Image from '../../assets/image/card-img.png';
       margin: 0;
       text-align: center;
       padding-bottom: 10rem;
-      text-decoration: none;
   }
 
-  .card__line {
-      width: 36rem;
-      height: 2rem;
-      background: var(--c-background-secondary);
-      margin-bottom: 11rem;
-  }
 </style>
