@@ -2,24 +2,23 @@
 defineProps({
     title: {
         type: String,
-        default: "Документы",
+        default: 'Документы',
     },
     text: {
         type: String,
-        default: "Документы",
+        default: 'Документы',
     },
     decoration: {
         type: Boolean,
-        default: false
-    }
-})
+        default: false,
+    },
+});
 </script>
 
 <template>
     <section class="section">
-        <div class="section__decoration" v-show="decoration"></div>
+        <div v-show="decoration" class="section__decoration"></div>
         <h2 class="section__title">{{ title }}</h2>
-<!--        <p class="section__text">{{ text }}</p>-->
         <slot></slot>
     </section>
 </template>

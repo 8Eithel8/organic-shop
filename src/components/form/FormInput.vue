@@ -9,10 +9,10 @@ defineProps({
     typeInput: {
         type: String,
         default: 'text',
-    }
-})
+    },
+});
 
-defineEmits(['update:modelValue'])
+defineEmits(['update:modelValue']);
 </script>
 
 <template>
@@ -20,12 +20,12 @@ defineEmits(['update:modelValue'])
         {{ label }}
         <div class="form__field-wrapper">
             <input
-                    :value="modelValue"
-                    @input="$emit('update:modelValue', $event.target.value)"
-                    class="form__field"
                     :class="{'form__field_error': hasError}"
-                    :type="typeInput"
                     :placeholder="placeholder"
+                    :type="typeInput"
+                    :value="modelValue"
+                    class="form__field"
+                    @input="$emit('update:modelValue', $event.target.value)"
                     @keyup.enter="$emit('input-enter')"
             />
         </div>
@@ -43,7 +43,7 @@ defineEmits(['update:modelValue'])
 }
 
 .form__label {
-    font-family: 'Inter';
+    font-family: var(--font-text);
     font-style: normal;
     font-weight: 400;
     font-size: 12rem;

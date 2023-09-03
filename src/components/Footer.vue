@@ -20,14 +20,30 @@ import Copyright from '@/components/Copyright.vue';
                 <h4 class="footer__title">Information</h4>
                 <div class="footer__line"></div>
                 <ul class="footer__links">
-                    <li><RouterLink class="footer__link" to="/news">About Us</RouterLink></li>
-                    <li><RouterLink class="footer__link" to="/docs">Products</RouterLink></li>
-                    <li><RouterLink class="footer__link" to="/">Contact Us</RouterLink></li>
-                    <li><RouterLink class="footer__link" to="/">Terms of Service</RouterLink></li>
-                    <li><RouterLink class="footer__link" to="/">About Us</RouterLink></li>
-                    <li><RouterLink class="footer__link" to="/">Products</RouterLink></li>
-                    <li><RouterLink class="footer__link" to="/">Terms of Service</RouterLink></li>
-                    <li><RouterLink class="footer__link" to="/">Terms of Service</RouterLink></li>
+                    <li>
+                        <RouterLink class="footer__link" to="/about-us">About Us</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink class="footer__link" to="/products">Products</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink class="footer__link" to="/contact">Contact Us</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink class="footer__link" to="/">Terms of Service</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink class="footer__link" to="/about-us">About Us</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink class="footer__link" to="/products">Products</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink class="footer__link" to="/">Terms of Service</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink class="footer__link" to="/">Terms of Service</RouterLink>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -49,7 +65,7 @@ import Copyright from '@/components/Copyright.vue';
 
 <style scoped>
 .footer {
-    background: url("../icons/back-footer.svg") repeat;
+    background: url("icons/back-footer.svg") repeat;
     background-size: cover;
 }
 
@@ -132,18 +148,18 @@ import Copyright from '@/components/Copyright.vue';
 }
 
 .footer__social-link_fb {
-    background: url("../icons/facebook.svg") no-repeat center;
+    background: url("icons/facebook.svg") no-repeat center;
 }
 
 .footer__social-link_in {
-    background: url("../icons/in.svg") no-repeat center;
+    background: url("icons/in.svg") no-repeat center;
 }
 
 .footer__social-link_tw {
-    background: url("../icons/tw.svg") no-repeat center;
+    background: url("icons/tw.svg") no-repeat center;
 }
 
 .footer__social-link_inst {
-    background: url("../icons/inst.svg") no-repeat center;
+    background: url("icons/inst.svg") no-repeat center;
 }
 </style>

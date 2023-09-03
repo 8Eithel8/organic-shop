@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-defineProps( {
+defineProps({
     root: {
         type: String,
         default: 'div',
@@ -33,8 +33,8 @@ defineProps( {
     right: {
         type: String,
         default: 'div',
-    }
-})
+    },
+});
 </script>
 
 <style scoped>

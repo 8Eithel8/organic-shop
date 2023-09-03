@@ -1,16 +1,16 @@
 <script setup>
-import Button from '@/components/buttons/Button.vue';
+import Button from '@/components/Button.vue';
 </script>
 
 <template>
     <section class="promo">
-            <div class="promo__text-block">
-                <p class="promo__subtitle">Healthy life with</p>
-                <h1 class="promo__title">Nature Organic</h1>
-                <p class="promo__text">Vegetables are the edible parts of a plant  that is used in cooking or can be eaten now.</p>
-                <Button>Explore Now</Button>
-            </div>
-            <div class="promo__image"></div>
+        <div class="promo__text-block">
+            <p class="promo__subtitle">Healthy life with</p>
+            <h1 class="promo__title">Nature Organic</h1>
+            <p class="promo__text">Vegetables are the edible parts of a plant that is used in cooking or can be eaten now.</p>
+            <Button>Explore Now</Button>
+        </div>
+        <div class="promo__image"></div>
     </section>
 </template>
 
@@ -70,7 +70,7 @@ import Button from '@/components/buttons/Button.vue';
 
 .promo__image {
     overflow: hidden;
-    background: url('../assets/image/promo-background.svg') no-repeat ;
+    background: url('../assets/image/promo-background.svg') no-repeat;
     width: 804px;
     height: 687px;
 }

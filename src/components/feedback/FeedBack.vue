@@ -22,19 +22,18 @@ defineProps({
                 author: 'Li Hua',
                 text: 'Thank you for all the amazing produce and products you deliver each week… you make my life so easy an bring goodness into our family eating. I’ve been roasting a lot of brussel sprouts and',
             },
-        ]
-    }
-
-})
+        ],
+    },
+});
 </script>
 
 <template>
     <section class="feedback">
         <div class="feedback__icon"></div>
-        <carousel :items-to-show="1"  wrapAround="true" autoplay="8000">
+        <carousel :items-to-show="1" autoplay="10000" wrapAround="true">
             <slide v-for="feedback in feedbacks" :key="feedback" class="slider">
                 <div class="feedback__container">
-                    <img class="feedback__image" :src="feedback.image">
+                    <img :src="feedback.image" class="feedback__image">
                     <h2 class="feedback__author">{{ feedback.author }}</h2>
                     <ul class="stars">
                         <li class="star"></li>

@@ -2,9 +2,9 @@
 </script>
 
 <template>
- <p class="text">
-     <slot></slot>
- </p>
+    <p class="text">
+        <slot></slot>
+    </p>
 </template>
 
 <style scoped>

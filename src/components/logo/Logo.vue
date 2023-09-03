@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <img class="logo" src='../icons/logo-header.svg' alt="Логотип"/>
+    <img alt="Логотип" class="logo" src='../icons/logo-header.svg'/>
 </template>
 
 <style scoped>

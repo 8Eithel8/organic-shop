@@ -46,22 +46,21 @@ defineProps({
             {
                 image: ImageThird,
             },
-        ]
-    }
-})
+        ],
+    },
+});
 </script>
 
 <template>
+    <carousel :items-to-show="5" autoplay="8000" wrapAround="true">
+        <slide v-for="slide in slides" :key="slide" class="slider">
+            <img :src="slide.image" alt="логотип"/>
+        </slide>
 
-<carousel :items-to-show="5"  wrapAround="true" autoplay="8000">
-<slide v-for="slide in slides" :key="slide" class="slider">
-        <img :src="slide.image" alt="логотип"/>
-</slide>
-
-<template #addons>
-    <pagination />
-</template>
-</carousel>
+        <template #addons>
+            <pagination/>
+        </template>
+    </carousel>
 </template>
 
 <style scoped>

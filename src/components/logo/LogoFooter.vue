@@ -2,8 +2,8 @@
 </script>
 
 <template>
-    <RouterLink to='/' class="link">
-        <img class="logo" src='../icons/logo-footer.svg' alt="Логотип"/>
+    <RouterLink class="link" to='/'>
+        <img alt="Логотип" class="logo" src='../icons/logo-footer.svg'/>
     </RouterLink>
 </template>
 

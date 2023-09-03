@@ -2,7 +2,7 @@
 import Text from '@/components/Text.vue';
 import Section from '@/components/section/Section.vue';
 import CardsBlog from '@/components/card/CardsBlog.vue';
-import Button from '@/components/buttons/Button.vue';
+import Button from '@/components/Button.vue';
 </script>
 
 <template>

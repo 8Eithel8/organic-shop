@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
     link: String,
-})
+});
 </script>
 
 <template>

@@ -8,10 +8,18 @@ import Logo from '@/components/logo/Logo.vue';
             <Logo/>
             <div class="header__block">
                 <ul class="header__links">
-                    <li><RouterLink class="header__link" to="/">Home</RouterLink></li>
-                    <li><RouterLink class="header__link" to="/products">Products</RouterLink></li>
-                    <li><RouterLink class="header__link" to="/blog">Blog</RouterLink></li>
-                    <li><RouterLink class="header__link" to="/about-us">About Us</RouterLink></li>
+                    <li>
+                        <RouterLink class="header__link" to="/">Home</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink class="header__link" to="/products">Products</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink class="header__link" to="/blog">Blog</RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink class="header__link" to="/about-us">About Us</RouterLink>
+                    </li>
                 </ul>
                 <RouterLink class="header__link header__link_contact" to="/contact">Contact</RouterLink>
             </div>
@@ -73,7 +81,7 @@ import Logo from '@/components/logo/Logo.vue';
     text-align: left;
     text-decoration: none;
     padding: 7rem 0;
-    border-bottom: 2rem solid  transparent;
+    border-bottom: 2rem solid transparent;
 }
 
 .header__link_current {

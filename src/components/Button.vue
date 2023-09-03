@@ -6,14 +6,14 @@ defineProps(
         },
         type: {
             type: String,
-            default: "button",
+            default: 'button',
         },
-    }
-)
+    },
+);
 </script>
 
 <template>
-    <button class="button" :type="type" @click="onClick">
+    <button :type="type" class="button" @click="onClick">
         <slot></slot>
     </button>
 </template>
@@ -33,6 +33,7 @@ defineProps(
     text-transform: capitalize;
     color: var(--c-text-light);
 }
+
 .ellipse {
     border-radius: 30rem;
     padding: 15rem 45rem;
