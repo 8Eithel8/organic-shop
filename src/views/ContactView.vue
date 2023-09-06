@@ -1,14 +1,13 @@
 <script setup>
-import { nanoid } from 'nanoid';
 import SectionWithDecor from '@/components/section/SectionWithDecor.vue';
 import Form from '@/components/form/Form.vue';
 import FormTextArea from '@/components/form/FormTextArea.vue';
 import FormInput from '@/components/form/FormInput.vue';
 import Text from '@/components/Text.vue';
 import { ref } from 'vue';
-import { useContactStore } from '@/stores/conract';
+import { useMessagesStore } from '@/stores/conract';
 
-const store = useContactStore();
+const store = useMessagesStore();
 const { add } = store;
 
 const name = ref('');
@@ -17,14 +16,7 @@ const email = ref('');
 const phone = ref('');
 const text = ref('');
 
-const data = {
-    name,
-    lastName,
-    email,
-    phone,
-    text,
-    id: nanoid(),
-}
+const data = { name, lastName, email, phone, text }
 </script>
 
 <template>
