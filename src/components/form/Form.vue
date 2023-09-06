@@ -8,17 +8,19 @@ defineProps({
         default: () => {},
     },
     textConfirm: String,
+    styleSubmit: String,
 });
+
 </script>
 
 <template>
     <form class="form"
-          @submit.prevent="onSubmit"
+          @submit="onSubmit"
     >
         <fieldset class="form__fields">
             <slot/>
         </fieldset>
-        <Button class="form__button" type="submit">{{ textConfirm }}</Button>
+        <Button class="form__button" :class="styleSubmit" type="submit">{{ textConfirm }}</Button>
     </form>
 </template>
 
@@ -34,6 +36,11 @@ defineProps({
     max-width: 523rem;
     padding: 0;
     z-index: 10;
+}
+
+.form_row {
+    flex-direction: row;
+    align-items: center;
 }
 
 .form__fields {

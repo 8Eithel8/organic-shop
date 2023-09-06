@@ -26,7 +26,6 @@ defineEmits(['update:modelValue']);
                     :value="modelValue"
                     class="form__field"
                     @input="$emit('update:modelValue', $event.target.value)"
-                    @keyup.enter="$emit('input-enter')"
             />
         </div>
     </label>
@@ -57,12 +56,28 @@ defineEmits(['update:modelValue']);
     box-sizing: border-box;
     font-family: var(--font-text);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16rem;
     line-height: 16rem;
     color: var(--c-text);
     padding: 11rem 0 11rem 15rem;
     max-width: 241rem;
+}
+
+.form__field_outline {
+    outline: none;
+    border-radius: 30rem;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    font-style: normal;
+    font-size: 16rem;
+    color: var(--c-text);
+    padding: 15rem 45rem;
+    max-width: 462rem;
+    border: none;
+    font-weight: 400;
+    line-height: 40rem;
+    text-align: start;
 }
 
 .form__field_error {
