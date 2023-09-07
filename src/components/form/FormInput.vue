@@ -6,6 +6,7 @@ defineProps({
     label: String,
     value: String,
     placeholder: String,
+    styleInput: String,
     typeInput: {
         type: String,
         default: 'text',
@@ -20,7 +21,7 @@ defineEmits(['update:modelValue']);
         {{ label }}
         <div class="form__field-wrapper">
             <input
-                    :class="{'form__field_error': hasError}"
+                    :class="styleInput, {'form__field_error': hasError}"
                     :placeholder="placeholder"
                     :type="typeInput"
                     :value="modelValue"
@@ -85,4 +86,17 @@ defineEmits(['update:modelValue']);
     border-bottom-color: #EE3465;
 }
 
+.form__field_subscribe {
+    outline: none;
+    border-radius: 30rem;
+    padding: 15rem 45rem;
+    border: none;
+    max-width: 462rem;
+    font-family: var(--font-text);
+    color: var(--c-text);
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 40rem;
+    text-align: start;
+}
 </style>

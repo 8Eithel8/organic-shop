@@ -9,6 +9,7 @@ defineProps({
     },
     textConfirm: String,
     styleSubmit: String,
+    buttonStile: String,
 });
 
 </script>
@@ -40,7 +41,6 @@ defineProps({
 
 .form_row {
     flex-direction: row;
-    align-items: center;
 }
 
 .form__fields {
@@ -52,10 +52,15 @@ defineProps({
     justify-content: space-between;
     max-width: 523rem;
     outline: none;
+    align-items: center;
 }
 
 .form__button {
     align-self: end;
     padding: 11rem 53rem 11rem 44rem;
+}
+
+.center {
+    align-self: center;
 }
 </style>
