@@ -18,6 +18,15 @@ defineProps({
     line-height: 19rem;
     padding-bottom: 10rem;
     text-decoration: none;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.card__link:hover {
+    opacity: .5;
+    background: var(--c-background);
+    transition: opacity .3s ease;
+    cursor: pointer;
 }
 
 .card__line {
@@ -25,5 +34,11 @@ defineProps({
     height: 2rem;
     background: var(--c-background-secondary);
     margin-bottom: 11rem;
+}
+
+.card__link:hover ~ .card__line{
+    opacity: .5;
+    transition: opacity .3s ease;
+    cursor: pointer;
 }
 </style>

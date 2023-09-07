@@ -22,13 +22,6 @@ defineProps({
     transition: opacity .3s ease;
 }
 
-.card:hover {
-    opacity: .5;
-    background: var(--c-background);
-    transition: opacity .3s ease;
-    cursor: pointer;
-}
-
 .card__image {
     width: 278rem;
     height: 195rem;

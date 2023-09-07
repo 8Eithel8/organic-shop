@@ -1,11 +1,5 @@
 <script setup>
-import Image from '../../assets/image/card-img.png';
-
 defineProps({
-    image: {
-        type: String,
-        default: Image,
-    },
     title: {
         type: String,
         default: 'Organic Food',
@@ -19,7 +13,7 @@ defineProps({
 
 <template>
     <div class="card">
-        <img :src="image" class="card__image">
+        <div class="card__image"></div>
         <h3 class="card__title">{{ title }}</h3>
         <p class="card__text">{{ text }}</p>
     </div>
@@ -35,15 +29,24 @@ defineProps({
     padding: 52rem 40rem 21rem 40rem;
     border-radius: 10rem;
     opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, background 0.3s ease;
 }
 
 .card:hover {
     opacity: .8;
-    background: var(--c-background);
-    transition: opacity 0.3s ease;
+    background: var(--c-background-secondary);
+    transition: opacity 0.3s ease, background 0.3s ease;
     cursor: pointer;
 }
+
+.card__image {
+    background: url("../../assets/image/card-image.svg") no-repeat center;
+    background-size: contain;
+    width: 84rem;
+    height: 84rem;
+
+}
+
 
 .card__title {
     font-family: var(--font-text);
@@ -55,8 +58,12 @@ defineProps({
     text-align: center;
 }
 
+.card:hover .card__image {
+    background: url("../../assets/image/card-image-hover.svg") no-repeat center;
+}
+
 .card:hover :is(.card__title, .card__text) {
-    color: var(--c-text-secondary);
+    color: var(--c-text-light);
     transition: color 0.3s ease;
 }
 

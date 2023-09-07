@@ -32,6 +32,14 @@ defineProps(
     line-height: 24rem;
     text-transform: capitalize;
     color: var(--c-text-light);
+    opacity: 1;
+    transition: opacity .3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .5;
+    transition: opacity .3s ease;
 }
 
 .ellipse {
