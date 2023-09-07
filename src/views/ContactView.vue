@@ -5,7 +5,7 @@ import FormTextArea from '@/components/form/FormTextArea.vue';
 import FormInput from '@/components/form/FormInput.vue';
 import Text from '@/components/Text.vue';
 import { ref } from 'vue';
-import { useMessagesStore } from '@/stores/conract';
+import { useMessagesStore } from '@/stores/contact';
 
 const store = useMessagesStore();
 const { add } = store;
