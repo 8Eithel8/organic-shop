@@ -26,7 +26,7 @@
 - создать валидацию формы,
 
 
-https://8eithel8.github.io/Ceramics/
+https://8eithel8.github.io/organic-shop/
 
 ## Customize configuration
 
