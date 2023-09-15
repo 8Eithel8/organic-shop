@@ -1,10 +1,32 @@
-# travel-agency
+# Organic
 
-This template should help get you started developing with Vue 3 in Vite.
+## Описание проекта
 
-## Recommended IDE Setup
+Самостоятельная проектная работа для проработки и закрепления навыков работы с фреймврком Vue3, построения сетки на flex и grid.
+Открытый дизайн-проект - многостраничный макет для верстки, разработанный для магазина натуральных продуктов.
+Дизайнером не было предусмотрено адаптивных версий, поэтому адаптивные версии пока отустсвуют, но в планах на доработку этот пункт учтен.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Проект представляет собой многостраничный сайт, созданный с использованием:
+
+- методологии БЭМ,
+
+- построения сетки на flex и grid,
+
+- Vue3 composition API,
+
+- прокрутка контента осуществляется с помощью внедренного в проект стороннего пакета,
+
+- css переменные,
+
+- создана простая форма с возможность сохранения введеных данных в локалльное хранилище,
+
+#### Планы по доработке проекта:
+
+- сделать адаптивные версии,
+- создать валидацию формы,
+
+
+https://8eithel8.github.io/Ceramics/
 
 ## Customize configuration
 
