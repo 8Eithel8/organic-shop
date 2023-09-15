@@ -45,7 +45,7 @@ import Text from '@/components/Text.vue';
         <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua.
         </Text>
-        <CardsBlog/>
+        <CardsBlog product-to-show="3" :isShow="false"/>
     </Section>
   </main>
 </template>

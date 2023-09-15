@@ -2,7 +2,6 @@
 import Text from '@/components/Text.vue';
 import Section from '@/components/section/Section.vue';
 import CardsBlog from '@/components/card/CardsBlog.vue';
-import Button from '@/components/Button.vue';
 </script>
 
 <template>
@@ -15,7 +14,6 @@ import Button from '@/components/Button.vue';
                 Feel free to fill out the form and reach to us. We will get back to you shortly.
             </Text>
             <CardsBlog/>
-            <Button class="button_outline">Load More</Button>
         </Section>
     </main>
 </template>

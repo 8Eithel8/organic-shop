@@ -22,13 +22,15 @@ import Button from '@/components/Button.vue';
     box-sizing: border-box;
     margin: 0 auto;
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    position: relative;
+    min-height: 687rem;
 }
 
 .promo__text-block {
     margin-top: 40rem;
     align-self: center;
+    z-index: 2;
 }
 
 .promo__subtitle {
@@ -71,8 +73,11 @@ import Button from '@/components/Button.vue';
 .promo__image {
     overflow: hidden;
     background: url('../assets/image/promo-background.svg') no-repeat;
-    width: 804px;
-    height: 687px;
+    width: 804rem;
+    height: 687rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 /*@media (max-width: 1023px) {*/
