@@ -6,23 +6,23 @@ import Logo from '@/components/logo/Logo.vue';
     <header class="header">
         <div class="header__container">
             <Logo/>
-            <div class="header__block">
-                <ul class="header__links">
+            <nav class="nav">
+                <ul class="nav__links">
                     <li>
-                        <RouterLink class="header__link" to="/">Home</RouterLink>
+                        <RouterLink class="nav__link" to="/">Home</RouterLink>
                     </li>
                     <li>
-                        <RouterLink class="header__link" to="/products">Products</RouterLink>
+                        <RouterLink class="nav__link" to="/products">Products</RouterLink>
                     </li>
                     <li>
-                        <RouterLink class="header__link" to="/blog">Blog</RouterLink>
+                        <RouterLink class="nav__link" to="/blog">Blog</RouterLink>
                     </li>
                     <li>
-                        <RouterLink class="header__link" to="/about-us">About Us</RouterLink>
+                        <RouterLink class="nav__link" to="/about-us">About Us</RouterLink>
                     </li>
                 </ul>
-                <RouterLink class="header__link header__link_contact" to="/contact">Contact</RouterLink>
-            </div>
+                <RouterLink class="nav__link nav__link_contact" to="/contact">Contact</RouterLink>
+            </nav>
         </div>
     </header>
 </template>
@@ -52,14 +52,14 @@ import Logo from '@/components/logo/Logo.vue';
 /*    }*/
 /*}*/
 
-.header__block {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50rem;
 }
 
-.header__links {
+.nav__links {
     display: flex;
     gap: 50rem;
     padding: 0;
@@ -67,11 +67,11 @@ import Logo from '@/components/logo/Logo.vue';
     align-items: center;
 }
 
-/*.header__link:hover {*/
+/*.nav__link:hover {*/
 /*    border-bottom: 2rem solid var(--c-link);*/
 /*}*/
 
-.header__link {
+.nav__link {
     color: rgb(55, 75, 92);
     font-family: var(--font-text);
     font-size: 16px;
@@ -84,17 +84,17 @@ import Logo from '@/components/logo/Logo.vue';
     border-bottom: 2rem solid transparent;
 }
 
-.header__link_current {
+.nav__link_current {
     border-bottom: 2rem solid var(--c-link);
 }
 
-.header__link_contact {
+.nav__link_contact {
     padding: 10rem 36rem;
     border: 2rem solid var(--c-link);
     border-radius: 10rem;
 }
 
-.header__link_contact:hover {
+.nav__link_contact:hover {
     background: var(--c-background-secondary);
     color: var(--c-text-light);
 }

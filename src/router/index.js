@@ -30,8 +30,8 @@ const router = createRouter({
       component: () => import('../views/blog.vue')
     },
   ],
-  linkActiveClass: 'header__link_current',
-  linkExactActiveClass: 'header__link_current',
+  linkActiveClass: 'nav__link_current',
+  linkExactActiveClass: 'nav__link_current',
 })
 
 export default router

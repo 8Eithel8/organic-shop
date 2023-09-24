@@ -1,13 +1,13 @@
 <template>
     <component :is="root" :class="`container-horizontal ${modifier === '' ? '' : `container-horizontal_${modifier}`}`">
-        <component :is="left" class="left">
-            <slot name="left"></slot>
+        <component :is="top" class="top">
+            <slot name="top"></slot>
         </component>
         <component :is="center" class="center">
             <slot></slot>
         </component>
-        <component :is="right" class="right">
-            <slot name="right"></slot>
+        <component :is="bottom" class="bottom">
+            <slot name="bottom"></slot>
         </component>
     </component>
 </template>
@@ -22,7 +22,7 @@ defineProps({
         type: String,
         default: '',
     },
-    left: {
+    top: {
         type: String,
         default: 'div',
     },
@@ -30,7 +30,7 @@ defineProps({
         type: String,
         default: 'div',
     },
-    right: {
+    bottom: {
         type: String,
         default: 'div',
     },
@@ -39,9 +39,8 @@ defineProps({
 
 <style scoped>
 .container-horizontal {
-    margin: 0 auto;
     height: 100%;
     display: grid;
-    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: min-content 1fr min-content;
 }
 </style>
